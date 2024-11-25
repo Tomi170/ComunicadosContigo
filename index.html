@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunicados Contigo - Región del Maule</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .convenio-banner {
+            background-color: #ffcc00;
+            color: #333;
+            text-align: center;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        header {
+            background-color: #00509e;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #003f7d;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .search-bar input[type="text"] {
+            width: 60%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .search-bar button {
+            padding: 10px 20px;
+            background-color: #00509e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .search-bar button:hover {
+            background-color: #003f7d;
+        }
+        .featured-jobs {
+            margin: 20px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .job-item {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .job-item:last-child {
+            border-bottom: none;
+        }
+        .job-item h3 {
+            margin: 0;
+            color: #00509e;
+        }
+        .job-item p {
+            margin: 5px 0 0;
+            color: #555;
+        }
+        .auth-section {
+            background-color: #eef3f9;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .auth-section button {
+            padding: 10px 20px;
+            background-color: #00509e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .auth-section button:hover {
+            background-color: #003f7d;
+        }
+        .profile-link {
+            text-align: center;
+            margin: 20px;
+        }
+        .profile-link a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #00509e;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .profile-link a:hover {
+            background-color: #003f7d;
+        }
+        .instagram-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-top: 1px solid #ddd;
+        }
+        .instagram-section a {
+            text-decoration: none;
+            color: #00509e;
+            font-size: 18px;
+            margin-left: 10px;
+        }
+        .instagram-section img {
+            width: 24px;
+            height: 24px;
+        }
+        footer {
+            background-color: #003f7d;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="convenio-banner">
+        📢 ¡Convenio exclusivo con INACAP para prácticas profesionales y ofertas laborales destacadas!
+    </div>
+    <header>
+        <h1>Comunicados Contigo</h1>
+        <p>Encuentra el empleo de tus sueños</p>
+    </header>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Buscar Empleos</a>
+        <a href="#">Empresas</a>
+        <a href="#">Postúlate</a>
+    </nav>
+    <div class="search-bar">
+        <input type="text" placeholder="Busca un empleo o empresa">
+        <button>Buscar</button>
+    </div>
+    <div class="featured-jobs">
+        <h2>Trabajos destacados</h2>
+        <div class="job-item">
+            <h3>Encargado de Producción</h3>
+            <p>Empresa: Agrícola Maule</p>
+            <p>Ubicación: Curicó, Región del Maule</p>
+        </div>
+        <div class="job-item">
+            <h3>Supervisor de Planta</h3>
+            <p>Empresa: Forestal Talca</p>
+            <p>Ubicación: Talca, Región del Maule</p>
+        </div>
+        <div class="job-item">
+            <h3>Asistente Administrativo</h3>
+            <p>Empresa: Comercio Linares</p>
+            <p>Ubicación: Linares, Región del Maule</p>
+        </div>
+    </div>
+    <div class="profile-link">
+        <a href="Perfil.html">Ver Perfil del Usuario</a>
+    </div>
+    <div class="auth-section">
+        <h2>¿Eres nuevo aquí?</h2>
+        <button onclick="alert('Formulario de registro próximamente')">Registrarse</button>
+        <h2>¿Ya tienes una cuenta?</h2>
+        <button onclick="alert('Formulario de inicio de sesión próximamente')">Iniciar sesión</button>
+    </div>
+    <div class="instagram-section">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Logo de Instagram">
+        <a href="https://www.instagram.com/comunicados_contigo.inc" target="_blank">
+            @comunicados_contigo.inc
+        </a>
+    </div>
+    <footer>
+        <p>&copy; 2024 Comunicados Contigo. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

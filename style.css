@@ -1,0 +1,119 @@
+/* Configuración General */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #212529;
+    background-color: #f8f9fa;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Encabezado */
+header {
+    background-color: #007BFF;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links .btn {
+    background-color: #0056b3;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Banner */
+.banner {
+    text-align: center;
+    background-image: url('banner.jpg'); /* Reemplaza con una imagen */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 20px;
+}
+
+.banner h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.banner .search-bar {
+    margin-top: 20px;
+}
+
+.search-bar input {
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+
+/* Empresas Asociadas */
+.companies {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.companies h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logos img {
+    width: 100px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background: white;
+}
+
+/* Pie de Página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    color: #6c757d;
+}

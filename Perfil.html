@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario - Comunicados Contigo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #00509e;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        .profile-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .profile-header {
+            text-align: center;
+        }
+        .profile-header img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+        }
+        .profile-header h2 {
+            margin: 10px 0 5px;
+            color: #00509e;
+        }
+        .profile-header p {
+            margin: 0;
+            color: #555;
+        }
+        .profile-section {
+            margin-top: 20px;
+        }
+        .profile-section h3 {
+            color: #00509e;
+            border-bottom: 2px solid #00509e;
+            padding-bottom: 5px;
+        }
+        .profile-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .profile-section ul li {
+            margin: 5px 0;
+        }
+        .rating-section {
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #eef3f9;
+            border-radius: 10px;
+        }
+        .rating-section h3 {
+            color: #00509e;
+            margin-bottom: 10px;
+        }
+        .rating {
+            font-size: 24px;
+            color: #f39c12;
+            margin-bottom: 10px;
+        }
+        .rating p {
+            margin: 5px 0;
+            color: #555;
+        }
+        .comment-section {
+            margin-top: 20px;
+        }
+        .comment-section textarea {
+            width: 100%;
+            height: 80px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 14px;
+        }
+        .comment-section button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #00509e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .comment-section button:hover {
+            background-color: #003f7d;
+        }
+        .comments-list {
+            margin-top: 20px;
+            list-style: none;
+            padding: 0;
+        }
+        .comments-list li {
+            background-color: #f5f5f5;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #00509e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 0;
+        }
+        .btn:hover {
+            background-color: #003f7d;
+        }
+        footer {
+            background-color: #003f7d;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Comunicados Contigo</h1>
+        <p>Perfil del Usuario</p>
+    </header>
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src="Gabo.jpg" alt="Foto de perfil">
+            <h2>Gabriel Lira</h2>
+            <p>Talca, Región del Maule</p>
+        </div>
+        <div class="profile-section">
+            <h3>Información de Contacto</h3>
+            <ul>
+                <li><strong>Email:</strong> gabriel.lira02@inacapmail.cl</li>
+                <li><strong>Teléfono:</strong> +56 9 1234 5678</li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/gabriellira" target="_blank">gabriellira</a></li>
+            </ul>
+        </div>
+        <div class="profile-section">
+            <h3>Visualización de Currículum</h3>
+            <a href="#" class="btn" onclick="alert('Visualización del currículum próximamente')">Ver Currículum</a>
+        </div>
+        <div class="profile-section">
+            <h3>Historial de Proyectos</h3>
+            <ul>
+                <li><strong>Proyecto 1:</strong> Optimización de procesos para Maule Tech (2022)</li>
+                <li><strong>Proyecto 2:</strong> Desarrollo web para Pymes en Talca (2021)</li>
+                <li><strong>Proyecto 3:</strong> Automatización de reportes para Comercio Linares (2020)</li>
+            </ul>
+        </div>
+        <div class="profile-section">
+            <h3>Ventana de Contratos</h3>
+            <a href="#" class="btn" onclick="alert('Próximamente podrás gestionar tus contratos desde aquí')">Ver Contratos</a>
+        </div>
+        <div class="rating-section">
+            <h3>Valoraciones</h3>
+            <div class="rating">⭐ 4.9</div>
+            <p>Basado en 120 valoraciones</p>
+        </div>
+        <div class="comment-section">
+            <h3>Deja tu comentario</h3>
+            <textarea placeholder="Escribe tu comentario sobre Juan Pérez..."></textarea>
+            <button onclick="alert('Tu comentario ha sido enviado. ¡Gracias por tu aporte!')">Enviar Comentario</button>
+        </div>
+        <ul class="comments-list">
+            <li><strong>María:</strong> Excelente profesional, muy recomendado.</li>
+            <li><strong>Carlos:</strong> Gran experiencia trabajando con él.</li>
+            <li><strong>Ana:</strong> Muy organizado y eficiente.</li>
+        </ul>
+    </div>
+    <footer>
+        <p>&copy; 2024 Comunicados Contigo. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
